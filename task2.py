@@ -1,0 +1,1 @@
+print ("  U   ", " UUU ", "UUUUU", " T T  ", " YYY", sep="\n")
