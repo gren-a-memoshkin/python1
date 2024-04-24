@@ -1,6 +1,8 @@
-count = 0
-while i > 0:
-    print (i)
-    i += 1
-else:
-    print ('done')
+import random
+
+list1 = []
+for k in range (10):
+    list1.append(random.randint(-10,10))
+    print (list1)
+
+   
