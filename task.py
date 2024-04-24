@@ -1,1 +1,0 @@
-print ("Vasya", "   go to", "      scool", sep="\n")
