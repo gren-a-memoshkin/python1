@@ -1,4 +1,4 @@
-__all__ = ['add','diff']
+__all__ = ['add','diff','multiply']
 # import math
 
 # Модуль вычислений
