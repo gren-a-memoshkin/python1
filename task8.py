@@ -1,3 +1,5 @@
+#сортировка списков 
+
 import random
 
 list1 = []
@@ -20,6 +22,6 @@ for i in list2:
         list3.append(i)
     elif i <= 0:
         list4.append(i)
-        
+
 print (list1, list2, list3, list4)
    
