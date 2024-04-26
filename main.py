@@ -1,16 +1,25 @@
-listArmstrong=[]
-listNumber=[0,1,2,3,4,5,6,7,8,9]
-for Num1 in listNumber:
-    for Num2 in listNumber:
-        for Num3 in listNumber:
-            if (((Num1**3)%10+(Num2**3)%10+(Num3**3)%10)%10==Num1):
-                result1=int(str(Num3)+str(Num2)+str(Num1))
-                result2=int(str(Num2)+str(Num3)+str(Num1))
-                if(result1==Num1**3+Num2**3+Num3**3 and result1>100):
-                    #print("Число Армстронга: "+str(result1))
-                    listArmstrong.append(result1)
+import tkinter as tk
 
-                elif (result2==Num1 ** 3+Num2 ** 3+Num3**3 and result2>100):
-                    #print("Число Армстронга: " + str(result2))
-                    listArmstrong.append(result2)
-print("Числа Армстронга:"+str(set(listArmstrong)))
+# Create the main window
+window = tk.Tk()
+window.title("PythonExamples.org")
+window.geometry("300x200")
+
+# Function to read and print the value in Entry widget
+def print_entered_value():
+    value = entry.get()
+    print("You entered :", value)
+
+label = tk.Label(window, text="Enter you name")
+label.pack()
+
+# Create an Entry field
+entry = tk.Entry(window)
+entry.pack()
+
+# Create a button
+button = tk.Button(window, text="Submit", command=print_entered_value)
+button.pack()
+
+# Run the application
+window.mainloop()
